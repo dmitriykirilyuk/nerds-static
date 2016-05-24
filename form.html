@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Nerds</title>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,300,500&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="form-visible">
+    <div class="write-us">
+      <div class="write-us-close">
+        <a href="#" class="btn-write-us-close"></a>
+      </div>
+      <form action="/echo" method="post">
+        <fieldset class="write-us-name">
+          <label for="name">Ваше имя:</label>
+          <input type="text" name="write-us-name" id="name" value="ПРЕДСТАВЬТЕСЬ ПОЖАЛУЙСТА">
+        </fieldset>
+        <fieldset class="writes-us-email">
+          <label for="email">Ваш e-mail:</label>
+          <input type="email" name="write-us-email" id="email" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </fieldset>
+        <fieldset class="write-us-message">
+          <label for="message">Текст письма:</label>
+          <textarea name="write-us-message" id="message" cols="54" rows="6">В СВОБОДНОЙ ФОРМЕ</textarea>
+        </fieldset>
+        <fieldset class="write-us-reset">
+          <input type="submit" class="btn-write-us-submit" value="ОТПРАВИТЬ">
+          <input type="reset" class="btn-write-us-cancel" value="ОТМЕНА">
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
